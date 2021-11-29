@@ -5,8 +5,9 @@ from nltk.corpus import *
 from nltk.corpus import gutenberg
 from nltk.corpus import stopwords
 
-words_list = []
-def bigrams50(text):
+words_list = []  #create an empty list
+#define a function
+def bigrams50(text):  
     text0 = [w for w in text if w.isalpha()]
     stop_words = nltk.corpus.stopwords.words('english')
     for w in text0:
